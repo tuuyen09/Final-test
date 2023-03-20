@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkString(st1, st2) {
+        let index;
+        for (let i = 0; i < st2.length; i++) {
+            index = st2[i];
+            for (let j = 0; j < st1.length; j++) {
+                if (index === st1[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    let string1 = 'd';
+    let string2 = 'codegym'
+    document.write(checkString(string1, string2))
+
+</script>
+
+</body>
+</html>
